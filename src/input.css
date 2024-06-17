@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navEffect {
+  @apply text-[12px] cursor-pointer text-primarytext hover:text-gray-900 max-[639px]:active:bg-stone-300 rounded-md md:hover:text-primaryclr max-[639px]:px-6 max-[639px]:py-2 max-[639px]:border max-[639px]:border-solid max-[639px]:border-primarytext max-[639px]:my-1 lg:text-[16px];
+}
+
+.about-h2 {
+  @apply text-primarytext mb-1 font-semibold lg:text-xl;
+}
+
+.aboutParagraph {
+  @apply text-[14px] font-light text-secondarytext lg:text-[16px];
+}
+
+.news-information {
+  @apply text-[12px] text-primarytext underline;
+}
+
+.box-news {
+  @apply p-4 border-2 border-solid border-zinc-300 shadow-md  max-w-[450px] flex flex-col justify-between;
+}
+
+.news-img {
+  width: 400px;
+  margin-bottom: 15px;
+  @apply rounded-md m-auto;
+}
+
+.news-source {
+  @apply mt-10 text-primarytext text-[12px] underline;
+}
+
+thead th {
+  @apply bg-slate-700 text-white px-[15px] py-[8px] border border-solid border-slate-900;
+}
+
+thead td {
+  @apply bg-slate-500 text-white px-[15px] py-[8px] border border-solid border-slate-900;
+}
+
+tbody td {
+  @apply bg-slate-400 text-zinc-100 px-[15px] py-[8px] border border-solid border-slate-900 font-medium;
+}
+
+@media (max-width: 410px) {
+  #about-section,
+  #news-section {
+    @apply px-8;
+  }
+
+  #about-section h1 {
+    @apply text-2xl;
+  }
+}
+
+@media (max-width: 639px) {
+}

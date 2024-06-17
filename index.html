@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIG DBD KOTA KENDARI</title>
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- script -->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./src/script.js"></script>
+  </head>
+  <body class="bg-zinc-200 font-poppins">
+    <!-- nav start -->
+    <nav
+      class="flex py-4 px-10 bg-navBg backdrop-blur-sm fixed top-0 right-0 left-0 items-center justify-between z-10 border-b-[1px] border-zinc-400 border-solid md:px-16"
+    >
+      <div class="w-[50px] h-auto md:w-[60px]">
+        <img src="./assets/img/logo-kota-kendari.png" alt="logo-kota-kendari" />
+      </div>
+      <ul
+        id="popup"
+        class="sm:flex md:gap-8 md:text-[1rem] md:items-center lg:text-[1.2rem] sm:text-[0.8rem] 2xl:gap-20 xl:gap-16 lg:gap-10 absolute right-12 top-20 text-sm border-2 sm:border-0 border-solid border-primarytext rounded-lg p-2 max-[639px]:bg-stone-200 sm:static sm:gap-8 max-[639px]:hidden"
+      >
+        <li id="hero" class="navEffect">Beranda</li>
+        <li id="about" class="navEffect">Tentang</li>
+        <li id="news" class="navEffect">Berita</li>
+        <li id="data-kasus" class="navEffect">Data Kasus</li>
+        <li id="peta" class="navEffect">Peta</li>
+        <li id="kontak" class="navEffect">Kontak</li>
+      </ul>
+      <div
+        id="hamburger"
+        class="max-[639px]:grid gap-[3px] p-2 border-solid border border-primarytext rounded-md active:bg-stone-400 hidden"
+      >
+        <span class="h-[2px] bg-primarytext w-4 block"></span>
+        <span class="h-[2px] bg-primarytext w-4 block"></span>
+        <span class="h-[2px] bg-primarytext w-4 block"></span>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- hero start -->
+    <section
+      class="h-screen flex items-center px-10 md:px-16"
+      id="hero-section"
+    >
+      <div class="">
+        <h1 class="text-3xl font-bold text-primarytext lg:text-4xl">
+          Selamat Datang
+        </h1>
+        <p
+          class="font-light text-[12px] mt-2 text-secondarytext lg:text-[14px]"
+        >
+          Ketahui data dan berita tentang Demam Berdarah Dengue disini.
+        </p>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- about start -->
+    <section class="pt-16 pb-8 px-16" id="about-section">
+      <div class="text-3xl font-semibold text-primarytext mb-4">
+        <h1>Bagaimana Bahaya DBD?</h1>
+      </div>
+      <div
+        class="grid sm:grid-cols-2 text-justify gap-x-10 gap-y-5 xl:grid-cols-3"
+      >
+        <div class="">
+          <h2 class="about-h2">Pengertian DBD</h2>
+          <p class="aboutParagraph">
+            Demam berdarah adalah penyakit infeksi akibat virus yang menular
+            melalui gigitan nyamuk. Penyakit ini menimbulkan gejala demam
+            tinggi, sakit kepala, serta nyeri tulang dan otot. Jika tidak
+            ditangani dengan tepat, demam berdarah berisiko mengancam nyawa.
+          </p>
+          <span class="text-[12px] text-secondarytext">Sumber: </span
+          ><a
+            href="https://www.alodokter.com/demam-berdarah"
+            target="_blank"
+            class="mt-2 text-[12px] text-secondarytext underline hover:text-stone-700"
+            >Alodokter.com</a
+          >
+        </div>
+        <div class="">
+          <h2 class="about-h2">Lorem, ipsum dolor.</h2>
+          <p class="aboutParagraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            doloremque laudantium placeat ipsam perspiciatis temporibus
+            excepturi veniam quia dolor iusto.
+          </p>
+        </div>
+        <div class="">
+          <h2 class="about-h2">Lorem ipsum dolor sit amet.</h2>
+          <p class="aboutParagraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolor
+            voluptatem similique veniam saepe! Non dicta, atque deleniti
+            recusandae dolorem ullam praesentium dolorum earum rerum
+            voluptatibus, ratione magnam nisi quasi.
+          </p>
+        </div>
+        <div class="">
+          <h2 class="about-h2">Lorem, ipsum dolor sit.</h2>
+          <p class="aboutParagraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit culpa aliquid, officiis sint dolor praesentium ducimus
+            doloribus. Praesentium ipsum unde possimus architecto beatae cumque
+            voluptatibus.
+          </p>
+        </div>
+        <div class="">
+          <h2 class="about-h2">Lorem ipsum dolor sit amet consectetur.</h2>
+          <p class="aboutParagraph">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+            nesciunt eius optio ipsa asperiores, eveniet facere quisquam
+            explicabo molestiae quam! Laudantium dolor, voluptatibus consequatur
+            quae aperiam molestias voluptates. Placeat nam nesciunt reiciendis
+            eveniet quisquam quidem fuga! Nam consequuntur corporis explicabo.
+          </p>
+        </div>
+        <div class="">
+          <h2 class="about-h2">Lorem, ipsum dolor.</h2>
+          <p class="aboutParagraph">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+            dolor, tempora totam autem aspernatur quam fuga reiciendis placeat
+            blanditiis. Impedit laudantium, error repudiandae fuga minus
+            ducimus? Qui.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- news section start -->
+    <section class="pt-16 pb-8 px-16" id="news-section">
+      <div class="text-3xl text-primarytext text-center font-bold mb-16">
+        <h1>BERITA</h1>
+      </div>
+      <div class="flex flex-wrap text-justify justify-center gap-x-8 gap-y-5">
+        <div class="box-news">
+          <div class="news-content">
+            <img
+              src="./assets/news-img/news1.jpg"
+              alt="news1"
+              class="news-img"
+            />
+            <a
+              href="https://kendariinfo.com/5-daerah-di-indonesia-jadi-pilot-projek-sebaran-nyamuk-wolbachia-kendari-belum-termasuk/"
+              target="_blank"
+              class="news-information"
+              >5 Daerah di Indonesia Jadi Pilot Projek Sebaran Nyamuk Wolbachia,
+              Kendari Belum Termasuk</a
+            >
+          </div>
+          <div class="news-source">
+            <a href="https://kendariinfo.com" target="_blank"
+              >Sumber: Kendariinfo.com</a
+            >
+          </div>
+        </div>
+        <div class="box-news">
+          <div class="news-content">
+            <img
+              src="./assets/news-img/news2.jpg"
+              alt="news2"
+              class="news-img"
+            />
+            <a
+              href="https://kendariinfo.com/rsud-bahteramas-konfirmasi-64-kasus-dbd-sejak-awal-januari-2024/"
+              class="news-information"
+              >RSUD Bahteramas Konfirmasi 64 Kasus DBD Sejak Awal Januari
+              2024</a
+            >
+          </div>
+          <div class="news-source">
+            <a href="https://kendariinfo.com" target="_blank"
+              >Sumber: Kendariinfo.com</a
+            >
+          </div>
+        </div>
+        <div class="box-news">
+          <div class="news-content">
+            <img
+              src="./assets/news-img/news3.jpg"
+              alt="news3"
+              class="news-img"
+            />
+            <a href="" class="news-information"
+              >Mahasiswa KKN UHO Lakukan Penanggulangan Penyakit Tak Menular di
+              Konawe</a
+            >
+          </div>
+          <div class="news-source">
+            <a href="https://kendariinfo.com" target="_blank"
+              >Sumber: Kendariinfo.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- news section end -->
+
+    <!-- data case section start -->
+    <section class="">
+      <!-- data case table -->
+      <table class="text-[8px]">
+        <thead>
+          <tr>
+            <th rowspan="2">Kecamatan</th>
+            <th colspan="2">2023</th>
+            <th colspan="2">2024</th>
+          </tr>
+          <tr>
+            <td>Kasus</td>
+            <td>Meninggal</td>
+            <td>Kasus</td>
+            <td>Meninggal</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <!-- data case table -->
+    </section>
+    <!-- data case section end -->
+  </body>
+</html>
