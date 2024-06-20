@@ -23,7 +23,7 @@ $(document).ready(function () {
         `;
       });
 
-      document.querySelector("tbody").innerHTML = row;
+      $("tbody").html(row);
     },
 
     error: (error) => {

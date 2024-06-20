@@ -19,7 +19,7 @@
 }
 
 .box-news {
-  @apply p-4 border-2 border-solid border-zinc-300 shadow-md  max-w-[450px] flex flex-col justify-between;
+  @apply p-4 border-2 border-solid border-zinc-300 shadow-md max-w-[450px] flex flex-col justify-between;
 }
 
 .news-img {

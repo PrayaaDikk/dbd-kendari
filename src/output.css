@@ -638,8 +638,12 @@ video {
   width: 50px;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+.grid-cols-auto-300px {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-center {

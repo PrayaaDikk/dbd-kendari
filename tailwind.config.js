@@ -12,6 +12,9 @@ module.exports = {
         primaryclr: "#0891b2",
         navBg: "rgb(212, 212, 216,.7)",
       },
+      gridTemplateColumns: {
+        "auto-300px": "repeat(auto-fit, minmax(300px, 1fr))",
+      },
     },
   },
   plugins: [],
